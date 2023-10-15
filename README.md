@@ -1,54 +1,67 @@
-# Phase 1 Project
-
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
-
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
-
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+# Microsoft Movies
+**Author:** Nyssa Mitchell
+ 
+ **link to header**
 
 ## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+This project is designed to help plan the future of Microsoft Movies. All of the big companies are creating original movie content and Microsft wants to too. They are contemplating creating their own Microsoft Movies platform. Descriptive analysis of current movie trends and the revenues they generate can help lead Microsoft in the right direction.
 
 ### Business Problem
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+I have been hired to analyse 3 sets of data detailing movies, their ratings and their average gross revenues in both the domestic and foreign markets. I am then to provide 3 conclusions and reccommendations to Microsoft and the future of their movie platform.
 
 ### The Data
 
-In the folder `zippedData` are movie datasets from:
+To answer those 3 questions I have used 3 datasets from 2 of the most reputable movie information sources:
+* Box Office Mojo (bom.movie_gross)
+* IMDB (imdb.title.basics,imdb.title.ratings)
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+This data provide insights into viewer ratings, revenue generated, movie studios and timings of some of the top movies from the past 12 years. 
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+## Methods
+To measure the success of a movie I used the two values, average rating and total value. I then posed 3 questions that I would analyse the data to answer:
+* What genres of movies have proved to be most successful?
+* Which movie studios have produced the most successful movies?
+* Does the runtime of a movie correlate to its success?
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+### Results - Most Succesful Genre
+I started by relating my genres to my two success areas and my conclusions were:
+* Measuring Success by average rating proved ineffectual: 
+      this showed a very even playing field with genres ranging in rating from 5 - 7.2 but there was no obvious correlations between the genre and the rating
+* Measuring Success by Total Revenue showed a clear result
 
-## Deliverables
 
-There are three deliverables for this project:
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+From this bar graph we can clearly see the top 3 genres of movies with the highest median revenues are: Adventure, Animation and Sci-Fi
 
-### Key Points
+### Results - Most Succesful Studios
+I again started by relating my genres to my two success areas and my conclusions were:
+Measuring Success by average rating proved ineffectual; Once again the average ratings were very similar and there were a lot more studios than genres this time so I needed to find another method
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+When analysing success of a studio against total revenue we were easily able to find the top 20 studios as seen in this bar graph. With the top 2 being HC and P/DW.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+### Results - Does Runtime Matter?
+For this final question I wanted to calculate the correlation coefficient between runtime and Revenue. This would tell us if the length of the movie impacts its success.  
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+The correlation factor of runtime to total revenue  =  0.14949065557391722
+This is also represented in the scatter plot which seems to have no shape or pattern whatsoever.
 
-## Getting Started
+Thus there is no correlation between the length of a movie and it’s success.
+
+## Conclusions and Reccommendations
+My 3 conclusions for the future of the Microsoft Movies project are:
+* The top 3 genres of movies are Adventure, Animation and Sci-Fi.
+
+    I would recommend creating original content in those genres to maximise revenue.
+* The most successful movie studios are: HC and P/DW.
+
+    I would recommend collaborating with them on future movie projects and emulating their success
+* Runtime does not influence revenue. Scientists have told us our attention spans are getting shorter and shorter but thankfully this does NOT correlate to our enjoyment of movies.
+
+    My recommendation would be to produce movie content of good quality instead of focusing on length.
+
 
 Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
 
@@ -56,10 +69,11 @@ Next, we recommend you check out [the Phase 1 Project Templates and Examples rep
 
 Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
 
-## Project Submission and Review
+## For More Information
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+See the full analysis in the Jupyter Notebook or review this presentation.
+For additional info, contact Nyssa Mitchell at nysmitch@gmail.com
 
-## Summary
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+
+
